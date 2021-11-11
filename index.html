@@ -106,12 +106,13 @@
 							<p>due to its cutting-edge technology.</p>
 							<ul class="button-group clearfix">
 								<li><a data-aos="fade-left" data-aos-duration="1500"
-										href="https://dex.aldrin.com/chart/spot/INU_USDC">Buy INU</a></li>
+										href="javascript:buyINU();">Buy INU</a></li>
 								<li><a data-aos="fade-left" data-aos-duration="1500"
-										href="https://trade.dexlab.space/#/market/G3Bss3a2tif6eHNzWCh14g5k2H4rwBAmE42tbckUWG5T">Add Liquidity</a></li>
+									href="javascript:addLiq();">Add Liquidity</a></li>
 							</ul>
 							<!-- <ul class="button-group clearfix">
 								<li><a data-aos="fade-right" data-aos-duration="1500"
+									https://app.atrix.finance/#/pools/Hvkg2eMoVAa7fHQYJJzw7K26HwFaV5KPE29YqsyzBEoM/deposit
 										href="https://app.atrix.finance/#/farms/9FRYSg4hzDnqhXZtHFr1eBH9pf13bNgzwhwJRfpLkqYM/stake">Yield
 										Farming</a><br></li>
 							</ul> -->
@@ -119,16 +120,21 @@
 					</div>
 
 					<div class="container">
-						<div class="partner-slider">
+						<div class="partner-slider" id="slider1">
 							<div class="item"><a target="_blank" href="https://trade.dexlab.space/#/market/G3Bss3a2tif6eHNzWCh14g5k2H4rwBAmE42tbckUWG5T"><img src="images/logo/dexlab-logo-white.png" alt=""></a></div>
-							<div class="item"><a target="_blank" href="https://app.atrix.finance/#/pools/Hvkg2eMoVAa7fHQYJJzw7K26HwFaV5KPE29YqsyzBEoM/deposit"><img src="images/logo/atrix-text.png" alt=""></a></div>
+							<div class="item"><a target="_blank" href="https://app.atrix.finance/#/farms/9FRYSg4hzDnqhXZtHFr1eBH9pf13bNgzwhwJRfpLkqYM/stake"><img src="images/logo/atrix-text.png" alt=""></a></div>
 							<div class="item"><a target="_blank" href="https://www.solape.io/#/"><img src="images/logo/solape.png" alt=""></a></div>
 							<div class="item"><a target="_blank" href="https://dex.aldrin.com/chart/spot/INU_USDC"><img src="images/logo/download.png" alt=""></a></div>
 							<div class="item"><a target="_blank" href="https://raydium.io/liquidity/?ammId=6cVw51aB4WjtnNGWAmD67DyJDGZqKf7kifufqUtntq9B"><img src="images/logo/raydium Liquidity Logo.png" alt=""></a></div>
 							<div class="item"><a target="_blank" href="https://trade.dexlab.space/#/market/G3Bss3a2tif6eHNzWCh14g5k2H4rwBAmE42tbckUWG5T"><img src="images/logo/dexlab-logo-white.png" alt=""></a></div>
-							<div class="item"><a target="_blank" href="https://app.atrix.finance/#/pools/Hvkg2eMoVAa7fHQYJJzw7K26HwFaV5KPE29YqsyzBEoM/deposit"><img src="images/logo/atrix-text.png" alt=""></a></div>
+							<div class="item"><a target="_blank" href="https://app.atrix.finance/#/farms/9FRYSg4hzDnqhXZtHFr1eBH9pf13bNgzwhwJRfpLkqYM/stake"><img src="images/logo/atrix-text.png" alt=""></a></div>
 							<div class="item"><a target="_blank" href="https://www.solape.io/#/"><img src="images/logo/solape.png" alt=""></a></div>
 							<div class="item"><a target="_blank" href="https://dex.aldrin.com/chart/spot/INU_USDC"><img src="images/logo/download.png" alt=""></a></div>
+							<div class="item"><a target="_blank" href="https://raydium.io/liquidity/?ammId=6cVw51aB4WjtnNGWAmD67DyJDGZqKf7kifufqUtntq9B"><img src="images/logo/raydium Liquidity Logo.png" alt=""></a></div>
+						</div>
+
+						<div class="partner-slider" id="slider2">
+							<div class="item"><a target="_blank" href="https://app.atrix.finance/#/farms/9FRYSg4hzDnqhXZtHFr1eBH9pf13bNgzwhwJRfpLkqYM/stake"><img src="images/logo/atrix-text.png" alt=""></a></div>
 							<div class="item"><a target="_blank" href="https://raydium.io/liquidity/?ammId=6cVw51aB4WjtnNGWAmD67DyJDGZqKf7kifufqUtntq9B"><img src="images/logo/raydium Liquidity Logo.png" alt=""></a></div>
 						</div>
 					</div>
@@ -296,6 +302,17 @@
 		<script src="js/theme.js"></script>
 
 		<script>
+			buyINU();
+
+			function buyINU() {
+				$("#slider1").show();
+				$("#slider2").hide();
+			}
+
+			function addLiq() {
+				$("#slider2").show();
+				$("#slider1").hide();
+			}
 			Highcharts.chart('pie', {
 				chart: {
 					type: 'pie',
