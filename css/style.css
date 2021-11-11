@@ -149,7 +149,7 @@
 .main-page-wrapper {overflow-x:hidden;}
  h1,h2,h3,h4,h5,h6,p,ul { margin:0;padding: 0;}
  h1,h2,h3,h4,h5,h6 {color:#283249;}
- h1 {font-family: fantasy; font-size: 70px; line-height: 75px;}
+ h1 {font-family: 'proxima_novaregular'; font-size: 70px; line-height: 75px;}
  h2 {font-family: 'proxima_novaregular'; font-size: 40px;}
  h3 {font-size: 28px; font-weight: normal; font-family: 'proxima_novaregular';}
  h4 {font-size: 24px; font-family: 'proxima_novaregular';}
